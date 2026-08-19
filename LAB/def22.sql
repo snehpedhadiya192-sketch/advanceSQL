@@ -11,7 +11,7 @@ DECLARE
 
 BEGIN
 
-   SELECT TOTAL, PER, RESULT INTO v_total, v_per, v_result FROM RESULT WHERE LOWER(RTRIM(NAME)) = LOWER(RTRIM(v_name));
+   SELECT TOTAL, PER, RESULT INTO v_total, v_per, v_result FROM RESULT WHERE NAME = v_name;
 
    DBMS_OUTPUT.PUT_LINE('--- Student Result ---');
    DBMS_OUTPUT.PUT_LINE('Name       : ' || v_name);
