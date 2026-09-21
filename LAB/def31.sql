@@ -3,10 +3,14 @@
 SET SERVEROUTPUT ON;
 
 CREATE OR REPLACE PROCEDURE show_welcome_message AS
+
 BEGIN
+
     DBMS_OUTPUT.PUT_LINE('Welcome to PL/SQL Programming!');
+
 END show_welcome_message;
 /
+
 BEGIN
     show_welcome_message;
 END;
